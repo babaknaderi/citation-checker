@@ -1,0 +1,45 @@
+name: Bug report
+description: Report reproducible incorrect or failed agent behavior
+title: "[Bug]: "
+labels:
+    - bug
+body:
+    - type: markdown
+      attributes:
+          value: Do not include private manuscript text, credentials, or unpublished research.
+    - type: dropdown
+      id: host
+      attributes:
+          label: Host
+          options:
+              - GitHub Copilot CLI
+              - Claude Code
+              - Other
+      validations:
+          required: true
+    - type: input
+      id: versions
+      attributes:
+          label: Versions
+          description: Include the host and plugin versions.
+      validations:
+          required: true
+    - type: textarea
+      id: reproduction
+      attributes:
+          label: Minimal reproduction
+          description: Provide sanitized LaTeX/BibTeX input and exact steps.
+      validations:
+          required: true
+    - type: textarea
+      id: expected
+      attributes:
+          label: Expected behavior
+      validations:
+          required: true
+    - type: textarea
+      id: actual
+      attributes:
+          label: Actual behavior
+      validations:
+          required: true

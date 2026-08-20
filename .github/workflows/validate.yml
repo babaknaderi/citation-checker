@@ -1,0 +1,18 @@
+name: Validate
+
+on:
+    push:
+    pull_request:
+
+permissions:
+    contents: read
+
+jobs:
+    repository:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out repository
+              uses: actions/checkout@v4
+            - name: Validate plugin metadata and agent layout
+              shell: pwsh
+              run: ./scripts/validate.ps1

@@ -1,0 +1,17 @@
+{
+    "name": "citation-checker",
+    "owner": {
+        "name": "Babak Naderi",
+        "url": "https://github.com/babaknaderi"
+    },
+    "metadata": {
+        "description": "Citation integrity tools for research manuscripts"
+    },
+    "plugins": [
+        {
+            "name": "citation-checker",
+            "source": "./",
+            "description": "Audits LaTeX citations, cited-source metadata, and claim-to-source alignment."
+        }
+    ]
+}

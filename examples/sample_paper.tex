@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\section{Codec Evaluation Methodology}
+
+We follow the codec benchmarking methodology of Naderi
+et~al.~\cite{naderi_vcd_2024}, encoding each source clip at five
+quantization-parameter levels (QP\,=\,20--44 for H.264/H.265 and QP\,=\,22--42 for H.266).
+Bjontegaard delta rate (BD-rate)
+is computed per clip relative to the H.264 baseline using PSNR and VMAF
+as quality metrics.
+
+Recent work by Zhang et~al.~\cite{zhang_neural_2023} proposed a neural
+codec that jointly optimizes rate, distortion, and perceptual quality
+through a three-objective loss balancing strategy.
+
+\subsubsection{Stratification strategy.}
+\label{sec:stratification}
+
+The subset selection employs a stratified sampling algorithm following Naderi
+et~al.~\cite{naderi_vcd_2024} to ensure that each group covers the full
+range of quality levels, spatial--temporal complexity, and distortion types.
+Clips are assigned to one of 12 strata formed by the Cartesian product of
+three MOS bins (Low: $[1.0, 2.8)$, Medium: $[2.8, 4.0)$, High:
+$[4.0, 5.0]$) and four SI$\times$TI quadrants (split at the population
+medians of SI and TI, computed per ITU-T
+P.910~\cite{itu-t_recommendation_p910_subjective_2023}).
+
+\bibliographystyle{plain}
+\bibliography{sample_refs}
+
+\end{document}

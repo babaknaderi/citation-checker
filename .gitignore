@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# LaTeX (test files)
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Citation Checker runtime state
+.citation-checker/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example

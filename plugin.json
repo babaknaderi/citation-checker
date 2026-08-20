@@ -1,0 +1,19 @@
+{
+    "name": "citation-checker",
+    "version": "1.0.0",
+    "description": "Audits LaTeX citations for fabricated sources, incorrect bibliographic metadata, and claims unsupported by the cited publications.",
+    "author": {
+        "name": "Babak Naderi",
+        "url": "https://github.com/babaknaderi"
+    },
+    "homepage": "https://github.com/babaknaderi/citation-checker",
+    "repository": "https://github.com/babaknaderi/citation-checker",
+    "license": "MIT",
+    "keywords": [
+        "citations",
+        "latex",
+        "research-integrity",
+        "citation-checking"
+    ],
+    "agents": "agents/"
+}
