@@ -1,5 +1,9 @@
 # Citation Checker
 
+<p align="center">
+	<img src="docs/citation-checker-banner.jpg" alt="Citation Checker" width="800">
+</p>
+
 An AI agent that detects **citation hallucinations** in LaTeX papers — fabricated sources, incorrect bibliographic metadata, and misattributed claims.
 
 ## The Problem
